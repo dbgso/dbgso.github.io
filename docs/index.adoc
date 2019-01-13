@@ -1,11 +1,21 @@
-= title
+:toc: left
+:nofooter:
+
+= GitHubPagesテスト
+
+== 執筆環境
+
+* Visual Studio Code
+* AsciiDoc
 
 
-== はじめに
+== 困ってること
 
-== おわりに
+ruby製でブラウザをオートリロードしてくれるライブラリが欲しい。
 
+Node.jsのlink:https://www.npmjs.com/package/simple-autoreload-server[simple-autoreload-server]みたいなもの。
 
-====
-a = 0;
-====
+Webページのプレビューがすごく便利なので使いたいが、Rubyで良いものが見つからない。
+
+Ruby+Node.jsではなく、Rubyのみで完結させたい。
+link:https://github.com/guard/guard-livereload[guard-livereload]があるが、ブラウザ側にも拡張を入れないといけないのはいまいち。  

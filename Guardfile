@@ -2,6 +2,10 @@ require 'asciidoctor'
 
 guard 'shell' do
   watch(/^docs\/.*\.adoc$/) {|m|
-    Asciidoctor.convert_file m[0]
+    `asciidoctor --backend html5 -a data-uri docs/index.adoc`
   }
 end
+  
+# guard 'livereload' do
+#     watch(/.*\.html$/) {|m|}
+# end
